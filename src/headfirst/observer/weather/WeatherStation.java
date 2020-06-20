@@ -6,8 +6,8 @@ public class WeatherStation {
 
 	public static void main(String[] args) {
 		WeatherData weatherData = new WeatherData();
-	
-		CurrentConditionsDisplay currentDisplay = 
+		//在构造函数中进行的注册
+		CurrentConditionsDisplay currentDisplay =
 			new CurrentConditionsDisplay(weatherData);
 		StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
 		ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
