@@ -1,7 +1,10 @@
 package headfirst.factory.pizzaaf;
 
-public class ChicagoPizzaIngredientFactory 
-	implements PizzaIngredientFactory 
+/**
+ * 具体的配料工厂
+ */
+public class ChicagoPizzaIngredientFactory
+	implements PizzaIngredientFactory
 {
 
 	public Dough createDough() {
@@ -17,8 +20,8 @@ public class ChicagoPizzaIngredientFactory
 	}
 
 	public Veggies[] createVeggies() {
-		Veggies veggies[] = { new BlackOlives(), 
-		                      new Spinach(), 
+		Veggies veggies[] = { new BlackOlives(),
+		                      new Spinach(),
 		                      new Eggplant() };
 		return veggies;
 	}
