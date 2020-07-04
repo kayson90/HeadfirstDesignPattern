@@ -1,5 +1,8 @@
 package headfirst.command.simpleremote;
 
+/**
+ * 具体的命令
+ */
 public class GarageDoorOpenCommand implements Command {
 	GarageDoor garageDoor;
 

@@ -1,14 +1,17 @@
 package headfirst.command.simpleremote;
 
+/**
+ * 这是client代码，实际上remote不包括在client里面，client包括接收者和具体的命令
+ */
 public class RemoteControlTest {
 	public static void main(String[] args) {
 		SimpleRemoteControl remote = new SimpleRemoteControl();
 		Light light = new Light();
 		GarageDoor garageDoor = new GarageDoor();
 		LightOnCommand lightOn = new LightOnCommand(light);
-		GarageDoorOpenCommand garageOpen = 
+		GarageDoorOpenCommand garageOpen =
 		    new GarageDoorOpenCommand(garageDoor);
- 
+
 		remote.setCommand(lightOn);
 		remote.buttonWasPressed();
 		remote.setCommand(garageOpen);

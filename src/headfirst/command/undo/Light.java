@@ -1,5 +1,8 @@
 package headfirst.command.undo;
 
+/**
+ * 这属于接收者
+ */
 public class Light {
 	String location;
 	int level;

@@ -1,18 +1,22 @@
 package headfirst.command.party;
 
+/**
+ * 命令组合成命令
+ * 宏命令
+ */
 public class MacroCommand implements Command {
 	Command[] commands;
- 
+
 	public MacroCommand(Command[] commands) {
 		this.commands = commands;
 	}
- 
+
 	public void execute() {
 		for (int i = 0; i < commands.length; i++) {
 			commands[i].execute();
 		}
 	}
- 
+
     /**
      * NOTE:  these commands have to be done backwards to ensure proper undo functionality
      */
